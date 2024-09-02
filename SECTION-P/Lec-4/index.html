@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        a:visited{
+            color: greenyellow;
+        }
+        a:active{
+            color: rgb(231, 15, 152);
+        }
+
+        /* ul li:first-child{
+            color: green;
+            background-color: antiquewhite;
+        }
+        ul li:last-child{
+            color: green;
+            background-color: antiquewhite;
+        } */
+        ul li:nth-child(3n + 2){
+            color: green;
+            background-color: antiquewhite;
+        }
+        p::selection{
+            background-color: red;
+            color: green;
+        }
+        p::first-line{
+            font-size: 20px;
+            color: brown;
+        }
+        p::first-letter{
+            font-size: 40px;
+        }
+        h1::after{
+            content: " shiv";
+            color: red;
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 2px solid red;
+            height: 50vh;
+            width: 50vw;
+            font-size: 5px;
+        }
+        .child{
+            border: 2px solid green;
+            height: 40%;
+            width: 40%;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <a href="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" target="blank">GOOGLE</a>
+        <ul>
+            <li>list-item-1</li>
+            <li>list-item-2</li>
+            <li>list-item-3</li>
+            <li>list-item-4</li>
+            <li>list-item-5</li>
+            <li>list-item-6</li>
+            <li>list-item-7</li>
+            <li>list-item-8</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quo facilis magnam inventore laudantium aspernatur consequatur ab provident quibusdam fuga, possimus saepe. Ratione doloremque dolor ea ex distinctio dolore ipsa!</p>
+        <h1>hello world</h1>
+    </div> -->
+    <div class="container">
+        <div class="child">
+            hello world
+        </div>
+    </div>
+</body>
+</html>

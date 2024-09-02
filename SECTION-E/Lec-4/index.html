@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form in html</h1>
+    <form action="backend.js">
+        <fieldset>
+            <legend>
+                Personal detail
+            </legend>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name here..." id="name" name="naam"/>
+        </div><br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="enter your age here..." name="age"/>
+        </div><br>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="enter your email here..."/>
+        </div><br>
+        <div>
+            <label for="password">password:</label>
+            <input type="password" id="password" placeholder="enter your password here..."/>
+        </div><br>
+        <div>
+            <label for="dob">D.O.B:</label>
+            <input type="date" id="dob" placeholder="enter your dob here..."/>
+        </div><br>
+        <div>
+            <label for="time">time:</label>
+            <input type="time" id="time" placeholder="enter your time here..."/>
+        </div><br>
+        <div>
+            <label for="file">upload file:</label>
+            <input type="file" id="file" placeholder="enter your time here..."/>
+        </div><br>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="checkbox" id="gender" name="abcde"/>Male
+            <input type="checkbox" id="gender" name="abcde"/>Female
+            <input type="checkbox" id="gender" name="abcde"/>Other
+        </div><br>
+        <div>
+            <label for="">bio</label>
+            <textarea name="" id="" cols="90" rows="40"></textarea>
+        </div>
+        <div>
+            <label for="">Select occupation</label>
+            <select>
+                <option value="">student</option>
+                <option value="">Teacher</option>
+                <option value="">admin</option>
+            </select>
+        </div>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </fieldset>
+    </form>
+</body>
+</html>

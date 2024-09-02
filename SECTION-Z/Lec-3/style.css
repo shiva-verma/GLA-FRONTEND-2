@@ -1,0 +1,15 @@
+/* h1{
+    color: red;
+    background-color: antiquewhite;
+    border: 2px solid green;
+} */
+*{
+    color: white;
+    background-color: black;
+}
+/* #heading{
+    border: 5px dotted yellow;
+} */
+#heading1, #heading, h1{
+    border: 5px dashed orange;
+}
