@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid red;
+    height: 90vh;
+    width: 90vw;
+}
+.box{
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    
+    margin: 60px;
+}
+.box:hover{
+    /* transform: rotate(40deg); */
+    /* transform: scaleY(2.5); */
+    /* transform: skew(70deg); */
+    /* transform: translateY(100px); */
+    transform: rotateX(-80deg);
+}

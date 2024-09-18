@@ -1,0 +1,74 @@
+.container{
+    border: 2px solid black;
+    height: 90vh;
+    width: 90vw;
+}
+.box{
+    border: 2px solid brown;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    position: relative;
+    animation-name: circle;
+    animation-duration: 7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all;
+    transition-duration: 4s; */
+}
+/* .box:hover{
+    transform: rotate(360deg);
+    transform: rotateX(360deg);
+    background-color: red;
+} */
+
+@keyframes circle {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    25%{
+        top: 0px;
+        left: 400px;
+        background-color: rgb(0, 255, 55);
+        border-radius: 50%;
+        border: 10px double black;
+        
+    }
+    50%{
+        top: 200px;
+        left: 400px;
+        background-color: rgb(255, 0, 251);
+        border-radius: 0%;
+        border: 10px dashed black;
+    }
+    75%{
+        top: 200px;
+        left: 0px;
+        background-color: rgb(0, 238, 255);
+        border-radius: 50%;
+        border: 10px solid black;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+        border-radius: 0%;
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:660px){
+      body{
+        background-color: black;
+      }
+}
+
+@media screen and (max-width:450px) {
+    body{
+        background-color: red;
+    }
+}

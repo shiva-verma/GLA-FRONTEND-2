@@ -1,0 +1,32 @@
+/* .container{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    height: 95vh;
+}
+.box{
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
+
+tablet
+@media screen and (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        background-color: black;
+        color: white;
+    }
+}
+
+mobile
+@media screen and (max-width:400px) {
+    body{
+        background-color: red;
+        color: black;
+    }
+} */

@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 90vh;
+    width: 90vw;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+/* .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+   0%{
+        top: 0px;
+        left:0px;
+        background-color: red;
+        transform: rotate(0deg);   
+   }
+   25%{
+        top: 0px;
+        left: 400px;
+        background-color: green;
+        border-radius: 50%;
+   }
+   50%{
+        left: 400px;
+        top: 200px;
+        background-color: blue;
+        border-radius: 0%;
+   } 
+   75%{
+        left: 0px;
+        top: 200px;
+        background-color: black;
+        border-radius: 50%;
+   }
+   100%{
+        top: 0px;
+        left: 0px;
+        background-color: grey;
+        transform: rotate(360deg);
+        border-radius: 0%;
+   }   
+} */
+
+.orbit{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    animation-name: galaxy;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.planet{
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.708), rgba(0, 0, 255, 0.717));
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px; 
+}
+.sun{
+    /* border: 2px solid green; */
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 100px;
+    left: 110px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px 1px rgb(255, 187, 0), 2px 2px 3px 5px rgb(255, 81, 0) ;
+    background-image: linear-gradient(to left, rgb(255, 132, 0), rgb(255, 111, 0));
+}
+@keyframes galaxy {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.orbit1{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 2px solid black;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    animation-name: galaxy;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left: -380px;
+
+}
+.planet1{
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    background-image: linear-gradient(to left, rgba(0, 255, 0, 0.708), rgba(255, 0, 204, 0.717));
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 80px; 
+}

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+.sun{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, rgb(255, 119, 0), rgb(255, 225, 0));
+}
+.orbit1{
+    border: 2px solid black;
+    height: 300px;
+    width: 500px;
+    border-radius: 50%;
+    animation-name: solar;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+}
+.planet1{
+    border: 2px solid black;
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+    position: relative;
+    top: 35px;
+    background-image: linear-gradient(to left, rgb(0, 77, 128), rgb(0, 195, 255));
+}
+/* .orbit2{
+    border: 2px solid black;
+    height: 450px;
+    width: 450px;
+} */
+ @keyframes solar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(270deg);
+    }
+ }

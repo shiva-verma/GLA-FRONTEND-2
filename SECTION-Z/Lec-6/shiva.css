@@ -2,14 +2,30 @@
     border: 2px solid red;
     display: flex;
     height: 400px;
-    flex-direction: row;
+    flex-direction: column;
     /* justify-content: space-evenly;
     align-items: center; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
+
 .item{
     border: 2px solid green;
     height: 100px;
     width: 100px;
     margin: 8px;
+}
+#item1{
+    order: 1;
+    /* flex-grow: 1;
+    flex-shrink: 3; */
+    flex-basis: 300px;
+    align-self: stretch;
+}
+#item3{
+   order: 2;
+   /* flex-grow: 1;  */
+}
+#item5{
+   order: 3; 
+   /* flex-grow: 1; */
 }

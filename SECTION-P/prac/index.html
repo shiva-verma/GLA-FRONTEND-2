@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .circle{
+            border: 2px solid;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            position: absolute;
+        }
+        /* .circle2{
+            border: 2px solid green;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+        .circle3{
+            border: 2px solid blue;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        } */
+        .one{
+            border-color: red;
+            animation: animate01 5s ease-in infinite;
+        }
+        .two{
+            border-color: blue;
+            animation: animate02 5s ease-in-out infinite;
+        }
+        .three{
+            border-color: green;
+            animation: animate03 5s ease-out infinite;
+        }
+
+        @keyframes animate01 {
+            0% {
+                /* rotate: 0deg; */
+                width: 40%;
+            }
+            /* 50% {
+                width: 40%;
+            }
+            75%{
+                width: 40%; 
+            } */
+            100% {
+                rotate: 360deg;
+                width: 40%;
+            }
+        }
+        @keyframes animate02 {
+            0% {
+                /* rotate: 0deg; */
+                width: 40%;
+            }
+            50% {
+                width: 40%;
+            }
+            75%{
+                width: 40%; 
+            }
+            100% {
+                rotate: 360deg;
+                width: 40%;
+            }
+        }
+        @keyframes animate03 {
+            0% {
+                /* rotate: 0deg; */
+                width: 40%;
+            }
+            50% {
+                width: 40%;
+            }
+            75%{
+                width: 40%; 
+            }
+            100% {
+                rotate: 360deg;
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+    </div>
+</body>
+</html>
